@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Dekko|Patrick+Hand');
+
+body {
+	margin:0;
+	background-color: Cornsilk;	
+/*	font-family: 'Patrick Hand', cursive;*/
+	font-family: 'Dekko', cursive;
+}
+
+/* Main Nav Bar - Top Fixed */
+
+#logoimg {
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 75px;
+	padding: 0px;
+}
+#logoimg img {
+	height: 75px;
+	width: 75px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: Teal;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	height: 75px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+li {
+    float: left;
+	height: 100%;
+}
+
+li a {
+    display: block;
+    color: khaki;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: DarkSlateGray;
+	color: khaki;
+}
+
+.active {
+    background-color: Tan;
+	color: black;
+}
+
+
+#content {
+	padding: 20px;
+	margin-top: 30px;
+	color: black;
+	background-color: Cornsilk;	
+	height: 100%;
+}
