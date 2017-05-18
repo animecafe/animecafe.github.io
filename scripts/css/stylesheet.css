@@ -60,6 +60,7 @@ li a:hover:not(.active) {
 #content {
 	padding: 20px;
 	margin-top: 105px;
+	padding-top: 20px;
 	color: black;
 	background-color: Cornsilk;	
 	height: 100%;
