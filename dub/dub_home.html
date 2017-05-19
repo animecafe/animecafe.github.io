@@ -21,10 +21,26 @@
 	<meta name="msapplication-TileImage" content="../images/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="../scripts/css/stylesheet.css" rel="stylesheet" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="../scripts/css/pcsheet.css" rel="stylesheet" id="pcstyle" >
+	<link href="../scripts/css/mobilestyle.css" rel="stylesheet" id="mstyle" >	
+
+	<script>
+	function init (){
+	if (screen.width <= 600) {
+		document.getElementById('body').innerHTML = document.getElementById('mstyle').style
+	} else if (screen.width > 600) {
+		document.getElementById('body').innerHTML = document.getElementById('pcstyle').style
+	}
+	};
+	
+	</script>
+	
+
 
 </head>
-<body>
+<body onload="init()">
 
 
 <ul>
@@ -35,12 +51,20 @@
 </ul>
 
 <div id="content">
-<h1>Welcome to Anime Cafe</h1>
+	<div id="pagehead">
+		<p>Welcome to Anime Cafe<br>
+		~ Dubbed Anime Selection ~</p>
+	</div>
 
-<h2>~ Dubbed Anime Selection ~</h2>
+<div class="animelinks">
 
-<br>
-<h1><a href="dub_anime/ep_1_temp.html" >To Test Anime Episode Page</a></h1>
+	<ul>
+		<li><a href="dub_anime/ep_1_temp.html" >To Test Anime Episode Page</a></li>
+	
+	</ul>
+	
+</div>
+
 
 <!--
 <h2>The navigation bar will stay at the top of the page while scrolling</h2>

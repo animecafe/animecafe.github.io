@@ -70,6 +70,15 @@ li a:hover:not(.active) {
 	text-align: center;
 }
 
+#pagehead {
+	display: block;
+	margin: auto;
+	font-size: 75px;
+	font-weight: bold;
+	text-align: center;
+	line-height: -10px;
+}
+
 .animelinks ul {
 	list-style-type: none;
 	display: block;
@@ -77,10 +86,11 @@ li a:hover:not(.active) {
     padding: 5px;
     background-color: Teal;
     width: 70%;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: bold;
-	margin-top: 45%;
+	margin-top: 15%;
 	height: auto;
+	border-radius: 20px;
 	
 }
 

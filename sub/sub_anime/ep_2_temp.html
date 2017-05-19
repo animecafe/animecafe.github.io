@@ -21,10 +21,26 @@
 	<meta name="msapplication-TileImage" content="../../images/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<link href="../../scripts/css/stylesheet.css" rel="stylesheet" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="../../scripts/css/pcsheet.css" rel="stylesheet" id="pcstyle" >
+	<link href="../../scripts/css/mobilestyle.css" rel="stylesheet" id="mstyle" >	
+
+	<script>
+	function init (){
+	if (screen.width <= 600) {
+		document.getElementById('body').innerHTML = document.getElementById('mstyle').style
+	} else if (screen.width > 600) {
+		document.getElementById('body').innerHTML = document.getElementById('pcstyle').style
+	}
+	};
+	
+	</script>
+	
+
 
 </head>
-<body>
+<body onload="init()">
 
 <ul>
 	<li id="logoimg"><img src="../../images/logo.png" ></li>
@@ -34,10 +50,11 @@
 </ul>
 
 <div id="content">
-<h1>Welcome to Anime Cafe</h1>
-
-<h2>~ Episode Page #2 ~</h2>
-
+	<div id="pagehead">
+		<p>Welcome to Anime Cafe<br>
+		~ Episode Page #2 ~</p>
+	</div>
+	
 	<img src="http://static.zerochan.net/Acchi.Kocchi.full.1437449.jpg" >
 	<br>
 

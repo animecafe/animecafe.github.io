@@ -60,14 +60,23 @@ li a:hover:not(.active) {
 #content {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-top: 2%;
+	margin-top: 5%;
 	color: black;
-	font-size: 23px;
+	font-size: 13px;
 	background-color: Cornsilk;	
 	height: 100%;
 	padding-left: 15%;
 	padding-right: 15%;
 	text-align: center;
+}
+
+#pagehead {
+	display: block;
+	margin: auto;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	line-height: -10px;
 }
 
 .animelinks ul {
@@ -77,10 +86,11 @@ li a:hover:not(.active) {
     padding: 5px;
     background-color: Teal;
     width: 70%;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: bold;
-	margin-top: 45%;
+	margin-top: 38%;
 	height: auto;
+	border-radius: 20px;
 	
 }
 
