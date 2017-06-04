@@ -5,6 +5,7 @@ body {
 	background-color: Cornsilk;	
 /*	font-family: 'Patrick Hand', cursive;*/
 	font-family: 'Dekko', cursive;
+	overflow-y: auto;
 }
 
 /* Main Nav Bar - Top Fixed */
@@ -19,7 +20,25 @@ body {
 	height: 55px;
 	width: 55px;
 }
-ul {
+
+#animepagelink {
+	text-decoration: none;
+	padding: 1px;
+	border: 1px solid black;
+	border-radius: 15px;
+	color: Cornsilk;
+	background-color: teal;
+	
+}
+
+#menu div {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	
+}
+
+#menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -33,12 +52,12 @@ ul {
 	font-weight: bold;
 }
 
-li {
+#menu li {
     float: left;
 	height: 100%;
 }
 
-li a {
+#menu li a {
     display: block;
     color: khaki;
     text-align: center;
@@ -46,28 +65,27 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+#menu li a:hover:not(.active) {
     background-color: DarkSlateGray;
 	color: khaki;
 }
 
-.active {
+#menu .active {
     background-color: Tan;
 	color: black;
 }
 
 
 #content {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-top: 5%;
+	padding-top: 5px;
+	padding-bottom: 10x;
 	color: black;
 	font-size: 13px;
 	background-color: Cornsilk;	
-	height: 100%;
-	padding-left: 15%;
-	padding-right: 15%;
+	padding-left: 12%;
+	padding-right: 12%;
 	text-align: center;
+	
 }
 
 #pagehead {
@@ -83,27 +101,42 @@ li a:hover:not(.active) {
 	list-style-type: none;
 	display: block;
 	margin: auto;
-    padding: 5px;
+    padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 1.5px;
+	padding-bottom: 1.5px;
     background-color: Teal;
-    width: 70%;
-	font-size: 15px;
+    width: 68%;
+	height: 100%;
+	font-size: 20px;
 	font-weight: bold;
-	margin-top: 38%;
-	height: auto;
+	margin-top: 10%;
 	border-radius: 20px;
 	
 }
 
 .animelinks li {
-	height: 100%;
+	height: auto;
 	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 9px;
+	margin-bottom: 9px;
+	border: 2px double Cornsilk;
+	border-radius: 20px;
 }
 
 .animelinks li a {
     color: khaki;
     text-align: center;
-    padding: 14px 16px;
+    padding-right: 3px;
+	padding-left: 3px;
+	padding-top: 1.5px;
+	padding-bottom: 1.5px;
+	width: 100%;
     text-decoration: none;
+	
 	
 }
 
@@ -111,6 +144,7 @@ li a:hover:not(.active) {
     background-color: DarkSlateGray;
 	color: khaki;
 }
+
 
 
 /* Anime Episode Pages Styles */
@@ -128,7 +162,7 @@ li a:hover:not(.active) {
     color: black;
     padding: 8px 16px;
     text-decoration: none;
-	font-size: 28px;
+	font-size: 19px;
     transition: background-color .3s;
 }
 

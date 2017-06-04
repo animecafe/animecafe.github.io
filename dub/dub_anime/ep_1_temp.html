@@ -23,36 +23,38 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="../../scripts/css/pcsheet.css" rel="stylesheet" id="pcstyle" >
+	<!--<link href="../../scripts/css/pcsheet.css" rel="stylesheet" id="pcstyle" >-->
 	<link href="../../scripts/css/mobilestyle.css" rel="stylesheet" id="mstyle" >	
 
 	<script>
-	function init (){
+	/*function init (){
 	if (screen.width <= 655) {
 		document.getElementById('body').innerHTML = document.getElementById('mstyle').style
 	} else if (screen.width > 655) {
 		document.getElementById('body').innerHTML = document.getElementById('pcstyle').style
 	}
 	};
-	
+	*/
 	</script>
 	
 
 
 </head>
-<body onload="init()">
-
+<body <!--onload="init()"-->>
+<div id="menu">
 <ul>
 	<li id="logoimg"><img src="../../images/logo.png" ></li>
 	<li><a href="../../index.html">Home</a></li>
 	<li><a class="active" href="../dub_home.html">Dubbed</a></li>
 	<li><a href="../../sub/sub_home.html">Subbed</a></li>
 </ul>
-
+</div>
 <div id="content">
+	<br>
+	<br>
 	<div id="pagehead">
-		<p>Welcome to Anime Cafe<br>
-		~ Episode Page #1 ~</p>
+		<p><a id="animepagelink" href="temp_anime_dub.html">Temp Anime</a>  (English Dub)<br>
+		~ Episode #1 ~</p>
 	</div>
 
 	<img src="https://res.cloudinary.com/sfp/image/upload/w_1200,ar_16:9,c_fill,q_60/oth/FunimationStoreFront/1291867/Latvian/1291867_Latvian_ShowMasterKeyArt_fb7ce37e-deff-e611-8175-020165574d09.jpg" >
