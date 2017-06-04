@@ -22,13 +22,21 @@ body {
 }
 
 #animepagelink {
+	font-size: 19px;
+}
+#animepagelink a {
+	width: 100%;
+	height: auto;
+	padding-top: 1.5px;
+	padding-bottom: 1.5px;
+	padding-left: 2.5px;
+	padding-right: 2.5px;
 	text-decoration: none;
-	padding: 1px;
 	border: 1px solid black;
 	border-radius: 15px;
 	color: Cornsilk;
 	background-color: teal;
-	
+
 }
 
 #menu div {
