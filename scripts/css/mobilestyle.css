@@ -40,6 +40,18 @@ body {
 
 }
 
+#videoplayer {
+	width: 95%;
+	height: 320px;
+	
+}
+#videoplayer iframe {
+	display: relative;
+	height: 100%;
+	width: 100%;
+	
+}
+
 #menu div {
 	position: fixed;
 	top: 0;
