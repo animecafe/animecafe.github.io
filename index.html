@@ -22,8 +22,12 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
-	<!--<link href="scripts/css/pcsheet.css" rel="stylesheet" id="pcstyle" >-->
+	<!--<link href="../scripts/css/pcsheet.css" rel="stylesheet" id="pcstyle" >-->
 	<link href="scripts/css/mobilestyle.css" rel="stylesheet" id="mstyle" >	
 
 	<script>
@@ -40,46 +44,44 @@
 
 
 </head>
-<body <!--onload="init()"-->>
-<div id="menu">
-<ul>
-	<li id="logoimg"><img src="images/logo.png" ></li>
-	<li><a class="active" href="index.html">Home</a></li>
-	<li><a href="dub/dub_home.html">Dubbed</a></li>
-	<li><a href="sub/sub_home.html">Subbed</a></li>
-</ul>
-</div>
-<div id="content">
-<h1>Welcome to Anime Cafe</h1>
+<body>
 
-<h2>~ Home Page ~</h2>
 
-<!--
-<h2>The navigation bar will stay at the top of the page while scrolling</h2>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="navbar-brand" id="logoimg"><img src="images/logo.png" ></div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav text-center">
+        <li><a class="active" href="index.html"><h4>Home</h4></a></li>
+		<li><a href="dub/dub_home.html"><h4>Dubbed</h4></a></li>
+		<li><a href="sub/sub_home.html"><h4>Subbed</h4></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
-<p>Some text some text some text some text..</p>
--->
+<div class="main">
+
+<div class="container">
+	<div id="pagehead">
+		<h1>Welcome to Anime Cafe</h1>
+		
+		<h2>~ Home Page ~</h2>
+	</div>
 
 </div>
-
+</div>
+<div class="footer position-fixed">
+	<div class="container">
+		<h3 class="footer-header"></h3>
+	</div>
+</div>
 </body>
 </html>

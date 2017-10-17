@@ -21,69 +21,65 @@
 	<meta name="msapplication-TileImage" content="../../../images/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!--<link href="../../../scripts/css/pcsheet.css" rel="stylesheet" id="pcstyle" >-->
-	<link href="../../../scripts/css/mobilestyle.css" rel="stylesheet" id="mstyle" >	
-
-	<script>
-	/*function init (){
-	if (screen.width <= 655) {
-		document.getElementById('body').innerHTML = document.getElementById('mstyle').style
-	} else if (screen.width > 655) {
-		document.getElementById('body').innerHTML = document.getElementById('pcstyle').style
-	}
-	};
-	*/
-	</script>
 	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
-
+	<!--<link href="../scripts/css/pcsheet.css" rel="stylesheet" id="pcstyle" >-->
+	<link href="../../../scripts/css/mobilestyle.css" rel="stylesheet" id="mstyle" >
+	<link href="../../../scripts/css/epSlideNavStyle.css" rel="stylesheet">
+	<!--<script src="../../../js/app.js" type="text/javascript"></script>
+	<script src="../../../js/controllers/DubAnimeListController.js" type="text/javascript"></script>-->
+	
 </head>
-<body <!--onload="init()"-->>
-<div id="menu">	
-<ul>
-	<li id="logoimg"><img src="../../../images/logo.png" ></li>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a class="active" href="../../../dub/dub_home.html">Dubbed</a></li>
-	<li><a href="../../../sub/sub_home.html">Subbed</a></li>
-</ul>
-</div>
-<div id="content">
-	<br>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="navbar-brand" id="logoimg"><img src="../../../images/logo.png" ></div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav text-center">
+        <li><a href="../../../index.html"><h4>Home</h4></a></li>
+		<li><a class="active" href="../../dub_home.html"><h4>Dubbed</h4></a></li>
+		<li><a href="../../../sub/sub_home.html"><h4>Subbed</h4></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main">
+	<div class="container">
 	<br>
 	<div id="pagehead">
-		<p id="animepagelink"><a href="kobayashisandub.html">Miss Kobayashi's Dragon Maid</a>  (Dub)<br>
+		<p><a href="kobayashisandub.html">Miss Kobayashi's Dragon Maid</a>  (Dub)<br>
 		~ Episode #13 ~</p>
 	</div>
-	
-	<div id="videoplayer">
-		<iframe src="https://drive.google.com/file/d/0B2aZlh05kpWFbzJJNjVGY3VpMWc/preview"></iframe>
+	<div class="jumbotron">
+		
+		<video name="epSlides" height="200px" width="100%" controls>
+			<source src="https://cdn.cizgifilmlerizle.com/cizgi/m/zanimes/Kobayashi-san%20Chi%20no%20Maid%20Dragon%20%28Dub%29%20Episode%20013.mp4?st=IXjV_8KoqjocGgYX8Vmqjg&e=1508253955">
+		</video>
+		<div style="height: auto; width: 40px; display: block; margin: auto;">
+			<span style="display: inline;">
+				<a href="ep_12_kobayashisan.html"><img src="../../../images/leftArrowA.png" alt="Previous Slide" title="Previous Slide" height="35px" width="35px" name="back" onMouseOver="document.back.src = '../../../images/leftArrowB.png'" onMouseOut="document.back.src = '../../../images/leftArrowA.png'"></a>
+			</span>
+			
+		</div>
 	</div>
-	<br>
-	<br>
-	
-<div class="pagination">
-	<a href="ep_12_kobayashisan.html">&laquo;</a>
-	<!--<a href="ep_1_kobayashisan.html">1</a>
-	<a href="ep_2_kobayashisan.html">2</a>
-	<a href="ep_3_kobayashisan.html">3</a>
-	<a href="ep_4_kobayashisan.html">4</a>
-	<a href="ep_5_kobayashisan.html">5</a>
-	<a href="ep_6_kobayashisan.html">6</a>
-	<a href="ep_7_kobayashisan.html">7</a>
-	<a href="ep_8_kobayashisan.html">8</a>
-	<a href="ep_9_kobayashisan.html">9</a>
-	<a href="ep_10_kobayashisan.html">10</a>-->
-	<a href="ep_11_kobayashisan.html">11</a>
-	<a href="ep_12_kobayashisan.html">12</a>
-	<a class="active" href="ep_13_kobayashisan.html">13</a>
-	<!--<a href="ep_13_kobayashisan.html">&raquo;</a>-->
-</div>
 
+</div>
 </div>
 
 </body>
 </html>
-
-

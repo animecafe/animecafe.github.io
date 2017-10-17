@@ -21,63 +21,85 @@
 	<meta name="msapplication-TileImage" content="../../../images/favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!--<link href="../../../scripts/css/pcsheet.css" rel="stylesheet" id="pcstyle" >-->
-	<link href="../../../scripts/css/mobilestyle.css" rel="stylesheet" id="mstyle" >	
-
-	<script>
-	/*function init (){
-	if (screen.width <= 655) {
-		document.getElementById('body').innerHTML = document.getElementById('mstyle').style
-	} else if (screen.width > 655) {
-		document.getElementById('body').innerHTML = document.getElementById('pcstyle').style
-	}
-	};
-	*/
-	</script>
 	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
-
+	<!--<link href="../scripts/css/pcsheet.css" rel="stylesheet" id="pcstyle" >-->
+	<link href="../../../scripts/css/mobilestyle.css" rel="stylesheet" id="mstyle" >
+	<script src="../../../js/app.js" type="text/javascript"></script>
+	<script src="../../../js/controllers/DubAnimeListController.js" type="text/javascript"></script>
+	
 </head>
-<body <!--onload="init()"-->>
-<div id="menu">	
-<ul>
-	<li id="logoimg"><img src="../../../images/logo.png" ></li>
-	<li><a href="../../../index.html">Home</a></li>
-	<li><a href="../../../dub/dub_home.html">Dubbed</a></li>
-	<li><a class="active" href="../../sub_home.html">Subbed</a></li>
-</ul>
-</div>
-<div class="animelinks" id="content">
+<body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <div class="navbar-brand" id="logoimg"><img src="../../../images/logo.png" ></div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav text-center">
+        <li><a href="../../../index.html"><h4>Home</h4></a></li>
+		<li><a href="../../../dub/dub_home.html"><h4>Dubbed</h4></a></li>
+		<li><a class="active" href="../../../sub/sub_home.html"><h4>Subbed</h4></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main">
+	<div class="container">
 	<br>
 	<div id="pagehead"> <!--style="background-image: url('../../../images/anime_title_imgs/Acchi-Kocchi.jpg'); color: MediumSpringGreen;"-->
 		<p>Miss Kobayashi's Dragon Maid (English Sub)<br>
 		~ Episode List ~</p>
 	</div>
-
-	<ul>
+	<!--<div>
+		<input class="form-control" id="myInput" type="text" placeholder="Search..">
+		<br />
+			
+	<ul class="list-group text-center" id="epList">
 		
-		<li><a href="ep_1_kobayashisan.html"> Episode #1 </a></li>
-		<li><a href="ep_2_kobayashisan.html"> Episode #2 </a></li>
-		<li><a href="ep_3_kobayashisan.html"> Episode #3 </a></li>
-		<li><a href="ep_4_kobayashisan.html"> Episode #4 </a></li>
-		<li><a href="ep_5_kobayashisan.html"> Episode #5 </a></li>
-		<li><a href="ep_6_kobayashisan.html"> Episode #6 </a></li>
-		<li><a href="ep_7_kobayashisan.html"> Episode #7 </a></li>
-		<li><a href="ep_8_kobayashisan.html"> Episode #8 </a></li>
-		<li><a href="ep_9_kobayashisan.html"> Episode #9 </a></li>
-		<li><a href="ep_10_kobayashisan.html">Episode #10</a></li>
-		<li><a href="ep_11_kobayashisan.html">Episode #11</a></li>
-		<li><a href="ep_12_kobayashisan.html">Episode #12</a></li>
-		<li><a href="ep_13_kobayashisan.html">Episode #13</a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_1_kobayashisan.html"><h4> Episode #1 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_2_kobayashisan.html"><h4> Episode #2 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_3_kobayashisan.html"><h4> Episode #3 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_4_kobayashisan.html"><h4> Episode #4 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_5_kobayashisan.html"><h4> Episode #5 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_6_kobayashisan.html"><h4> Episode #6 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_7_kobayashisan.html"><h4> Episode #7 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_8_kobayashisan.html"><h4> Episode #8 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_9_kobayashisan.html"><h4> Episode #9 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_10_kobayashisan.html"><h4> Episode #10 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_11_kobayashisan.html"><h4> Episode #11 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_12_kobayashisan.html"><h4> Episode #12 </h4></a></li>
+		<li class="list-group-item"><a class="list-group-item btn-success" href="ep_13_kobayashisan.html"><h4> Episode #13 </h4></a></li>
 	
 	</ul>
-
+	<script>
+		$(document).ready(function(){
+			$("#myInput").on("keyup", function() {
+    			var value = $(this).val().toLowerCase();
+    				$("#epList li").filter(function() {
+      					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    				});
+  			});
+		});
+	</script>
+	</div>-->
 
 </div>
 <br>
 <br>
-
+</div>
 </body>
 </html>
