@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Dekko|Patrick+Hand');
 
+.main {
+	padding-top: 60px;
+}
+
 body {
 	margin:0;
 	background-color: Cornsilk;	
 /*	font-family: 'Patrick Hand', cursive;*/
 	font-family: 'Dekko', cursive;
 	overflow-y: auto;
+	z-index: 0;
 }
 
 /* Main Nav Bar - Top Fixed */
@@ -13,16 +18,91 @@ body {
 #logoimg {
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 55px;
 	padding: 0px;
 	margin: 0px;
 }
 #logoimg img {
-	height: 100%;
-	width: 55px;
+	height: 70px;
+	width: 70px;
+}
+@media only screen and (max-width: 450px) and (orientation: portrait) {
+	.mobile-nav-dropdown {
+		margin-top: 0;
+		background-color: maroon;
+		color: khaki;
+		font-weight: 300;
+	}
+	.search-bar-size {
+		height: 35px;
+		font-size: 30px;
+		
+	}
+}
+@media only screen and (min-width: 451px) {
+	.mobile-nav-dropdown {
+		margin-top: auto;
+		margin-bottom: auto;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.navbar-nav {
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.nav-items-vertical-center {
+		margin-top: auto;
+		margin-bottom: auto;
+		padding-top: auto;
+		padding-bottom: auto;
+	}
+	.main {
+		padding-left: auto;
+		padding-right: auto;
+	}
+	.search-bar-size {
+		height: 50px;
+		font-size: 45px;
+	}
+}
+.search-bar-size {
+	border: medium solid black;
+}
+
+.navbar, .navbar-header {
+	height: 70px;
+	background-color: black;
+}
+
+.navbar, .navbar-header, .mobile-nav-dropdown {
+	z-index: 4;
+}
+
+.my-menu-btn {
+	height: 68px;
+	width: 58px;
+	padding: 0 auto 0 auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	background-color: #3A3939;
+	
+}
+
+.anime-list-item {
+	z-index: 0;
+	background-color: firebrick;
+	color: black;
+	
+}
+.anime-list-item a {
+	color: black;
+	font-weight: 400;
+	font-size: 45px;
 }
 
 .main {
+	z-index: 0;
 	margin:0;
 	background-color: Cornsilk;
 }

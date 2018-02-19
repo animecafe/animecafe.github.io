@@ -4,12 +4,12 @@ app.controller('DubListController', ['$scope', function($scope) {
 	
 	$scope.anime = [
 		{
-			name: 'Kaze no Stigma (Dub)',
-			pageUrl: 'dub_anime/kazenostigmadub/kazenostigmadub.html'
+			name: '',
+			pageUrl: ''
 		},
 		{
-			name: 'Miss Kobayashi\'s Dragon Maid (Dub)',
-			pageUrl: 'dub_anime/kobayashichinomaidosamadub/kobayashisandub.html'
+			name: '',
+			pageUrl: ''
 		}
 	];
 	
